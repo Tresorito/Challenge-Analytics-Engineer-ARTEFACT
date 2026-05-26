@@ -1,0 +1,21 @@
+# Environnement virtuel
+.venv/
+
+# Données générées
+data/raw/*.csv
+data/processed/
+
+# DuckDB
+warehouse/*.duckdb
+warehouse/*.wal
+
+# dbt
+air_civ_analytics_project/target/
+air_civ_analytics_project/dbt_packages/
+air_civ_analytics_project/logs/
+
+# Power BI exports
+powerbi/exports/
+
+# Secrets
+.env

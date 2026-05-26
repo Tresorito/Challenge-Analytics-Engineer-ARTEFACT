@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Données brutes chargées depuis les CSV"
+    tables:
+      - name: flights
+        description: "Vols Air Côte d'Ivoire"
+      - name: bookings
+        description: "Réservations passagers"
+      - name: customers
+        description: "Profils clients"
+      - name: routes
+        description: "Routes opérées"
+      - name: airports
+        description: "Aéroports du réseau"
+      - name: customer_reviews
+        description: "Avis clients - source NLP"
+      - name: support_tickets
+        description: "Tickets support - source NLP"
+      - name: loyalty_activity
+        description: "Activité programme fidélité"
