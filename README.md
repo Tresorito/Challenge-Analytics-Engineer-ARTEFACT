@@ -1,6 +1,6 @@
 # Write-up — Air Côte d'Ivoire Analytics Challenge
-Candidat :Trésor  
-Date :02 Juin 2026  
+Candidat :Trésor ADOSSI 
+Date :01 Juin 2026  
 
 1. Compréhension du problème
 
