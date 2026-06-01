@@ -53,7 +53,7 @@ pour les raisons suivantes :
    la complexité d'un Data Vault
 2. **Objectif** — dashboard analytique décisionnel,
    pas système d'audit ou de traçabilité
-3. **Power BI** — optimisé nativement pour le star schema
+3. **Power BI** — optimisé nativement pour le star schema  ![Star Schema Power BI](docs\modeling_diagram.png)
 4. **Timeline** — livraison rapide avec dbt Core
 
 Le Data Vault aurait été pertinent pour historiser les changements
@@ -63,6 +63,8 @@ Couches dbt
 Staging      → nettoyage, typage, renommage
 Intermediate → calculs LTV, churn, NPS, métriques routes
 Marts        → tables finales Power BI (dim + fact)
+
+
 
 ### Tables du modèle
 **Dimensions :** dim_customers, dim_routes, dim_airports  
@@ -145,10 +147,10 @@ DuckDB (warehouse/air_civ.duckdb)
 Réponse chiffrée en français
 
 4 outils exposés
-/routes | Quelles routes méritent plus de budget ? 
-/clients_a_risque | Quels clients sont à risque de churn ? 
-/upsell | Quel potentiel upsell par segment ? 
-/resume | Où investir le budget en priorité ? 
+routes | Quelles routes méritent plus de budget ? 
+clients_a_risque | Quels clients sont à risque de churn ? 
+upsell | Quel potentiel upsell par segment ? 
+resume | Où investir le budget en priorité ? 
 
 Démonstration
 Claude appelle automatiquement les outils pertinents,
