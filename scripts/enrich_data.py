@@ -82,11 +82,11 @@ def load_excel():
     flights   = pd.read_excel(XLSX, sheet_name="Flights")
     bookings  = pd.read_excel(XLSX, sheet_name="Bookings")
 
-    console.print(f"  [green]✓[/green] {len(airports)} aéroports")
-    console.print(f"  [green]✓[/green] {len(routes)} routes")
-    console.print(f"  [green]✓[/green] {len(customers)} clients")
-    console.print(f"  [green]✓[/green] {len(flights)} vols")
-    console.print(f"  [green]✓[/green] {len(bookings)} réservations")
+    console.print(f"{len(airports)} aéroports")
+    console.print(f"{len(routes)} routes")
+    console.print(f"{len(customers)} clients")
+    console.print(f"{len(flights)} vols")
+    console.print(f"{len(bookings)} réservations")
     return airports, routes, customers, flights, bookings
 
 
@@ -108,7 +108,7 @@ def enrich_customers(customers_df, seed=42):
         df["birth_date"] = pd.to_datetime(df["birth_date"], errors="coerce")
         df["age"] = ((datetime.now() - df["birth_date"]).dt.days / 365).astype(int)
 
-    console.print(f"  [green]✓[/green] Clients enrichis ({len(df)} lignes)")
+    console.print(f"Clients enrichis ({len(df)} lignes)")
     return df
 
 
@@ -139,7 +139,7 @@ def enrich_flights(flights_df, routes_df, seed=42):
     if "delay_minutes" not in df.columns and "delay_min" in df.columns:
         df = df.rename(columns={"delay_min": "delay_minutes"})
 
-    console.print(f"  [green]✓[/green] Vols enrichis ({len(df)} lignes)")
+    console.print(f"Vols enrichis ({len(df)} lignes)")
     return df
 
 
@@ -172,7 +172,7 @@ def gen_reviews(bookings_df, n=3000, seed=42):
         })
 
     df = pd.DataFrame(rows)
-    console.print(f"  [green]✓[/green] {len(df):,} avis clients générés")
+    console.print(f"{len(df):,} avis clients générés")
     return df
 
 
@@ -200,7 +200,7 @@ def gen_tickets(customers_df, flights_df, n=2000, seed=42):
         })
 
     df = pd.DataFrame(rows)
-    console.print(f"  [green]✓[/green] {len(df):,} tickets support générés")
+    console.print(f"{len(df):,} tickets support générés")
     return df
 
 
@@ -228,7 +228,7 @@ def gen_loyalty(customers_df, bookings_df, seed=42):
             })
 
     df = pd.DataFrame(rows)
-    console.print(f"  [green]✓[/green] {len(df):,} transactions loyalty générées")
+    console.print(f"{len(df):,} transactions loyalty générées")
     return df
 
 
@@ -259,8 +259,6 @@ def main():
         path = RAW / f"{name}.csv"
         df.to_csv(path, index=False)
         console.print(f"  [green]✓[/green] {name}.csv — {len(df):,} lignes")
-
-    console.rule("[bold green]Terminé ![/bold green]")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 import duckdb
 from fastapi import FastAPI
 from pathlib import Path
+from fastapi.responses import JSONResponse, RedirectResponse
 
 
 DB_PATH = Path("warehouse/air_civ.duckdb")
@@ -118,8 +119,6 @@ def get_resume():
         }
     }
 
-
-
 @app.get("/")
 def health():
     return {
@@ -127,3 +126,4 @@ def health():
         "message": "Serveur MCP Air CI opérationnel",
         "outils": ["/routes", "/clients_a_risque", "/upsell", "/resume"]
     }
+

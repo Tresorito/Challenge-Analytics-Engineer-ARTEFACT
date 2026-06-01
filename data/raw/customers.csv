@@ -50,7 +50,7 @@ CUST0048,Serge,Sow,F,1998-09-19,Benin,Cotonou,Business,Explorer,2024-11-30,Mobil
 CUST0049,Awa,Konan,F,1988-02-13,Côte d'Ivoire,Bouaké,Standard,Explorer,2024-10-03,Mobile App,economy,True,38
 CUST0050,Fatou,Konan,M,1969-12-17,Nigeria,Lagos,Business,,2024-04-30,Travel Agency,business,False,56
 CUST0051,Fatou,Kouassi,F,1979-12-21,Côte d'Ivoire,Bouaké,Standard,Explorer,2024-05-05,Travel Agency,economy,True,46
-CUST0052,Didier,Kouassi,F,1974-06-09,Côte d'Ivoire,Yamoussoukro,Business,,2024-08-04,Mobile App,business,False,51
+CUST0052,Didier,Kouassi,F,1974-06-09,Côte d'Ivoire,Yamoussoukro,Business,,2024-08-04,Mobile App,business,False,52
 CUST0053,Nadia,Konan,M,1982-11-04,Côte d'Ivoire,Yamoussoukro,Standard,Explorer,2024-06-12,Travel Agency,economy,True,43
 CUST0054,Nadia,Kone,F,2000-04-10,Nigeria,Lagos,Premium,,2024-04-14,Web,business,False,26
 CUST0055,Nadia,Mensah,M,1978-04-03,France,Paris,Budget,Explorer,2024-01-04,Mobile App,economy,True,48
@@ -77,7 +77,7 @@ CUST0075,Nadia,Kouassi,M,1977-04-15,Ghana,Accra,Standard,Gold,2023-04-22,Corpora
 CUST0076,Mariam,Kouassi,M,1991-11-02,France,Paris,Premium,,2023-01-25,Mobile App,business,False,34
 CUST0077,Awa,Konan,F,1990-08-23,Nigeria,Lagos,Business,Gold,2023-06-19,Travel Agency,business,True,35
 CUST0078,Mariam,Sow,M,1967-05-22,Ghana,Accra,Business,Gold,2024-03-29,Mobile App,business,True,59
-CUST0079,Awa,Traore,M,1970-06-14,Côte d'Ivoire,Abidjan,Standard,Silver,2024-01-25,Travel Agency,economy,True,55
+CUST0079,Awa,Traore,M,1970-06-14,Côte d'Ivoire,Abidjan,Standard,Silver,2024-01-25,Travel Agency,economy,True,56
 CUST0080,Amadou,Traore,F,1995-04-12,Senegal,Dakar,Budget,Explorer,2024-04-30,Web,economy,True,31
 CUST0081,Amadou,Kouassi,M,1967-07-02,Benin,Cotonou,Budget,Gold,2023-09-21,Mobile App,economy,True,58
 CUST0082,Koffi,Ndiaye,M,1988-05-11,Benin,Cotonou,Standard,Silver,2023-11-21,Travel Agency,economy,True,38
@@ -96,7 +96,7 @@ CUST0094,Bintou,Kone,F,1991-02-26,Nigeria,Lagos,Business,,2024-06-30,Web,busines
 CUST0095,Mariam,Ouattara,M,1991-05-22,Benin,Cotonou,Standard,,2024-08-03,Travel Agency,economy,False,35
 CUST0096,Amadou,Konan,M,1977-07-24,Nigeria,Lagos,Standard,,2023-06-10,Corporate Desk,economy,False,48
 CUST0097,Koffi,Ouattara,M,1994-03-05,Côte d'Ivoire,Abidjan,Budget,,2024-02-11,Web,economy,False,32
-CUST0098,Didier,Amani,F,1974-06-10,France,Paris,Standard,Gold,2023-04-22,Corporate Desk,economy,True,51
+CUST0098,Didier,Amani,F,1974-06-10,France,Paris,Standard,Gold,2023-04-22,Corporate Desk,economy,True,52
 CUST0099,Yao,Mensah,F,1967-08-11,Nigeria,Lagos,Standard,Explorer,2023-03-30,Mobile App,economy,True,58
 CUST0100,Yao,Ndiaye,M,1977-08-06,Benin,Cotonou,Budget,Gold,2023-06-10,Corporate Desk,economy,True,48
 CUST0101,Koffi,Diallo,F,1977-01-18,Senegal,Dakar,Business,,2024-02-04,Corporate Desk,business,False,49
@@ -110,7 +110,7 @@ CUST0108,Jean,Konan,F,1976-07-06,Senegal,Dakar,Business,Gold,2023-06-22,Travel A
 CUST0109,Bintou,Konan,M,1993-09-17,Côte d'Ivoire,Yamoussoukro,Business,Gold,2023-09-16,Corporate Desk,business,True,32
 CUST0110,Jean,Mensah,M,1988-10-05,Benin,Cotonou,Standard,,2023-08-24,Mobile App,economy,False,37
 CUST0111,Serge,Konan,M,1998-05-10,France,Paris,Business,Silver,2023-08-15,Mobile App,business,True,28
-CUST0112,Didier,Ouattara,M,1997-06-02,Senegal,Dakar,Standard,Explorer,2023-02-16,Web,economy,True,28
+CUST0112,Didier,Ouattara,M,1997-06-02,Senegal,Dakar,Standard,Explorer,2023-02-16,Web,economy,True,29
 CUST0113,Awa,Ndiaye,M,1984-02-17,Côte d'Ivoire,Bouaké,Standard,Explorer,2023-11-05,Mobile App,economy,True,42
 CUST0114,Jean,Ndiaye,M,1975-03-01,Ghana,Accra,Business,Explorer,2023-03-07,Mobile App,business,True,51
 CUST0115,Fatou,Ouattara,M,1965-01-21,Benin,Cotonou,Standard,Explorer,2024-09-08,Corporate Desk,economy,True,61
@@ -146,7 +146,7 @@ CUST0144,Fatou,Ouattara,M,1968-01-03,Senegal,Dakar,Premium,Explorer,2024-11-22,T
 CUST0145,Fatou,Traore,F,1984-12-13,France,Paris,Premium,Gold,2024-04-18,Mobile App,business,True,41
 CUST0146,Mariam,Traore,F,1995-11-18,Ghana,Accra,Business,,2024-11-13,Corporate Desk,business,False,30
 CUST0147,Fatou,Sow,F,1995-06-26,Nigeria,Lagos,Standard,Explorer,2023-09-17,Corporate Desk,economy,True,30
-CUST0148,Mariam,Kone,F,1982-06-08,Benin,Cotonou,Standard,Explorer,2024-09-30,Web,economy,True,43
+CUST0148,Mariam,Kone,F,1982-06-08,Benin,Cotonou,Standard,Explorer,2024-09-30,Web,economy,True,44
 CUST0149,Jean,Diallo,M,1989-01-03,Benin,Cotonou,Business,,2023-12-20,Web,business,False,37
 CUST0150,Awa,Kouassi,F,1983-05-20,Benin,Cotonou,Standard,Gold,2023-07-10,Corporate Desk,economy,True,43
 CUST0151,Mariam,Kouassi,M,1999-03-20,Senegal,Dakar,Business,Gold,2024-10-13,Travel Agency,business,True,27
@@ -184,7 +184,7 @@ CUST0182,Awa,Konan,M,1997-12-24,France,Paris,Budget,,2023-01-06,Mobile App,econo
 CUST0183,Serge,Mensah,M,1971-08-11,Benin,Cotonou,Standard,,2024-05-07,Corporate Desk,economy,False,54
 CUST0184,Nadia,Kouassi,F,1965-08-23,Ghana,Accra,Business,,2023-08-14,Web,business,False,60
 CUST0185,Jean,Diallo,M,1971-07-27,France,Paris,Standard,Explorer,2023-12-14,Travel Agency,economy,True,54
-CUST0186,Nadia,Traore,M,1974-06-08,Ghana,Accra,Budget,Explorer,2023-05-29,Corporate Desk,economy,True,51
+CUST0186,Nadia,Traore,M,1974-06-08,Ghana,Accra,Budget,Explorer,2023-05-29,Corporate Desk,economy,True,52
 CUST0187,Fatou,Ouattara,M,1980-03-01,Ghana,Accra,Standard,,2023-06-21,Travel Agency,economy,False,46
 CUST0188,Koffi,Amani,M,1995-02-05,Nigeria,Lagos,Standard,Silver,2023-08-05,Corporate Desk,economy,True,31
 CUST0189,Koffi,Mensah,F,1988-07-09,Senegal,Dakar,Premium,,2023-10-24,Corporate Desk,business,False,37
@@ -201,7 +201,7 @@ CUST0199,Serge,Diallo,F,1982-02-15,Côte d'Ivoire,Bouaké,Standard,Silver,2023-0
 CUST0200,Amadou,Diallo,F,1979-03-22,Côte d'Ivoire,Yamoussoukro,Standard,Explorer,2023-01-19,Corporate Desk,economy,True,47
 CUST0201,Amadou,Ndiaye,F,1990-01-25,Benin,Cotonou,Standard,,2023-12-10,Corporate Desk,economy,False,36
 CUST0202,Jean,Ouattara,F,1985-09-05,France,Paris,Standard,Explorer,2024-10-09,Web,economy,True,40
-CUST0203,Koffi,Sow,F,1969-06-14,Senegal,Dakar,Standard,,2023-05-23,Corporate Desk,economy,False,56
+CUST0203,Koffi,Sow,F,1969-06-14,Senegal,Dakar,Standard,,2023-05-23,Corporate Desk,economy,False,57
 CUST0204,Nadia,Konan,F,1967-11-20,Nigeria,Lagos,Premium,Explorer,2024-10-05,Web,business,True,58
 CUST0205,Koffi,Mensah,F,1998-01-14,France,Paris,Premium,,2023-11-09,Travel Agency,business,False,28
 CUST0206,Mariam,Traore,F,1997-05-03,Benin,Cotonou,Standard,Gold,2024-03-26,Web,economy,True,29
@@ -224,7 +224,7 @@ CUST0222,Didier,Ndiaye,F,1987-10-21,Benin,Cotonou,Business,,2023-01-03,Travel Ag
 CUST0223,Serge,Sow,F,1984-07-27,Benin,Cotonou,Standard,Silver,2023-07-21,Mobile App,economy,True,41
 CUST0224,Bintou,Ndiaye,M,1999-09-05,Nigeria,Lagos,Standard,,2023-06-10,Web,economy,False,26
 CUST0225,Koffi,Traore,F,1998-08-27,Côte d'Ivoire,Bouaké,Standard,Silver,2023-03-05,Web,economy,True,27
-CUST0226,Didier,Amani,F,1980-06-09,Benin,Cotonou,Budget,Explorer,2024-08-19,Web,economy,True,45
+CUST0226,Didier,Amani,F,1980-06-09,Benin,Cotonou,Budget,Explorer,2024-08-19,Web,economy,True,46
 CUST0227,Yao,Kone,M,1966-01-08,Senegal,Dakar,Standard,Gold,2024-03-26,Web,economy,True,60
 CUST0228,Yao,Kouassi,F,1967-03-19,France,Paris,Standard,Gold,2024-04-11,Travel Agency,economy,True,59
 CUST0229,Didier,Mensah,M,1969-04-22,Nigeria,Lagos,Business,Explorer,2024-02-28,Travel Agency,business,True,57
@@ -244,7 +244,7 @@ CUST0242,Aminata,Ndiaye,M,1965-02-27,Nigeria,Lagos,Premium,Gold,2024-08-22,Web,b
 CUST0243,Aminata,Traore,F,1985-04-25,Ghana,Accra,Business,,2024-02-08,Mobile App,business,False,41
 CUST0244,Bintou,Traore,M,1992-08-11,Senegal,Dakar,Standard,Silver,2023-07-30,Corporate Desk,economy,True,33
 CUST0245,Bintou,Diallo,M,1977-01-23,Benin,Cotonou,Budget,,2024-10-14,Mobile App,economy,False,49
-CUST0246,Fatou,Kouassi,F,1975-06-12,France,Paris,Budget,Explorer,2023-05-21,Mobile App,economy,True,50
+CUST0246,Fatou,Kouassi,F,1975-06-12,France,Paris,Budget,Explorer,2023-05-21,Mobile App,economy,True,51
 CUST0247,Serge,Kone,M,1980-12-08,Benin,Cotonou,Standard,Explorer,2024-10-18,Travel Agency,economy,True,45
 CUST0248,Fatou,Diallo,F,1980-06-21,Benin,Cotonou,Standard,Silver,2023-06-23,Mobile App,economy,True,45
 CUST0249,Nadia,Ouattara,F,1972-12-10,France,Paris,Standard,,2023-03-03,Travel Agency,economy,False,53
@@ -280,7 +280,7 @@ CUST0278,Koffi,Mensah,M,1988-09-28,Benin,Cotonou,Standard,Explorer,2024-02-20,Tr
 CUST0279,Serge,Amani,M,1995-09-12,Côte d'Ivoire,Abidjan,Business,Gold,2023-06-04,Mobile App,business,True,30
 CUST0280,Awa,Kone,M,1993-07-19,Ghana,Accra,Premium,Explorer,2023-05-28,Travel Agency,business,True,32
 CUST0281,Fatou,Mensah,M,1969-04-19,Benin,Cotonou,Standard,,2023-12-28,Corporate Desk,economy,False,57
-CUST0282,Serge,Ouattara,F,1996-06-06,Senegal,Dakar,Business,Explorer,2023-06-18,Travel Agency,business,True,29
+CUST0282,Serge,Ouattara,F,1996-06-06,Senegal,Dakar,Business,Explorer,2023-06-18,Travel Agency,business,True,30
 CUST0283,Serge,Konan,F,1968-07-15,Ghana,Accra,Business,,2024-05-28,Web,business,False,57
 CUST0284,Yao,Konan,F,1968-02-03,Ghana,Accra,Business,,2023-10-05,Web,business,False,58
 CUST0285,Jean,Konan,F,1985-06-28,Benin,Cotonou,Standard,Explorer,2024-11-26,Travel Agency,economy,True,40

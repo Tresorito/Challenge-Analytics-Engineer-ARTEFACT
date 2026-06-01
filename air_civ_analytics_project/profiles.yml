@@ -1,0 +1,7 @@
+air_civ_analytics_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../warehouse/air_civ.duckdb'
+      threads: 4

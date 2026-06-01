@@ -60,15 +60,23 @@ def poser_question(question, messages):
             for bloc in response.content:
                 if bloc.type == "tool_use":
                     nom_outil = bloc.name.replace("get_", "")
-                    print(f"\n  → Consultation des données : {nom_outil}...")
+                    print(f"\n Consultation des données : {nom_outil}...")
                     resultat = appeler_outil(nom_outil)
                     tool_results.append({
                         "type": "tool_result",
                         "tool_use_id": bloc.id,
                         "content": resultat
                     })
-            messages.append({"role": "assistant", "content": response.content})
-            messages.append({"role": "user", "content": tool_results})
+
+            if tool_results:
+                messages.append({
+                    "role": "assistant",
+                    "content": response.content
+                })
+                messages.append({
+                    "role": "user",
+                    "content": tool_results
+                })
 
         elif response.stop_reason == "end_turn":
             reponse_text = ""
@@ -76,10 +84,12 @@ def poser_question(question, messages):
                 if hasattr(bloc, "text"):
                     reponse_text = bloc.text
                     print(f"\nClaude : {bloc.text}\n")
-            messages.append({
-                "role": "assistant",
-                "content": reponse_text
-            })
+
+            if reponse_text:
+                messages.append({
+                    "role": "assistant",
+                    "content": reponse_text
+                })
             break
 
     return messages
