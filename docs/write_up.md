@@ -1,6 +1,6 @@
 # Write-up — Air Côte d'Ivoire Analytics Challenge
-Candidat :Trésor  
-Date :02 Juin 2026  
+Candidat : Trésor  
+Date :01 Juin 2026  
 
 1. Compréhension du problème
 
@@ -14,16 +14,16 @@ Trois axes analysés :
 - Upsell et cross-sell ancillaire
 
 Parties prenantes identifiées
-- Direction générale → décision budgétaire globale
-- Direction réseau → expansion et fréquences
-- Direction commerciale → rétention et upsell
-- Direction opérations → fiabilité et ponctualité
+- Direction générale : décision budgétaire globale
+- Direction réseau : expansion et fréquences
+- Direction commerciale : rétention et upsell
+- Direction opérations : fiabilité et ponctualité
 
 
 
 2. Données
 
-Starter dataset (données réelles): air_cote_divoire_starter_datase
+Starter dataset (données réelles): air_cote_divoire_starter_dataset
 
 
 Données générées (enrichissement) : enrich_data.py
@@ -40,21 +40,22 @@ Hypothèses sur les données
 
 3. Architecture technique
 
-Stack choisie 1 : Python → DuckDB → dbt → Power BI → MCP (FastAPI)
+Stack choisie 1 : <img width="973" height="199" alt="Stack1" src="https://github.com/user-attachments/assets/faad197f-7942-47c3-a2cc-39cac7f2a1d0" />
 
-Stack choisie 2 : Python → DuckDB → dbt → Power BI → Power BI Copilot
+Stack choisie 2 : <img width="973" height="199" alt="Stack2" src="https://github.com/user-attachments/assets/15fb7b02-cecb-44d6-9f5f-e4a1b6970ccc" />
 
 Choix de modélisation — Star Schema
+<img width="948" height="463" alt="DiagramePowerBIStarSchema" src="https://github.com/user-attachments/assets/0cb6cc3d-5bcb-469b-baa7-a60546ff5bab" />
 
 Nous avons opté pour un star schema organisé en 3 couches dbt
 pour les raisons suivantes :
 
-1. **Volume** — moins de 12 000 lignes ne justifie pas
+1. Volume — moins de 12 000 lignes ne justifie pas
    la complexité d'un Data Vault
-2. **Objectif** — dashboard analytique décisionnel,
+2. Objectif — dashboard analytique décisionnel,
    pas système d'audit ou de traçabilité
-3. **Power BI** — optimisé nativement pour le star schema  ![Star Schema Power BI](docs\modeling_diagram.png)
-4. **Timeline** — livraison rapide avec dbt Core
+3. Power BI — optimisé nativement pour le star schema 
+4. Timeline — livraison rapide avec dbt Core
 
 Le Data Vault aurait été pertinent pour historiser les changements
 de segments clients ou intégrer des sources temps réel (Amadeus, Sabre).
@@ -65,14 +66,12 @@ Intermediate → calculs LTV, churn, NPS, métriques routes
 Marts        → tables finales Power BI (dim + fact)
 
 
+Tables du modèle
+Dimensions : dim_customers, dim_routes, dim_airports  
+Faits : fact_bookings, fact_flights  
+Agrégats : int_customer_metrics, int_route_metrics  
+Marts : mart_customer_segments, mart_route_performance
 
-### Tables du modèle
-**Dimensions :** dim_customers, dim_routes, dim_airports  
-**Faits :** fact_bookings, fact_flights  
-**Agrégats :** int_customer_metrics, int_route_metrics  
-**Marts :** mart_customer_segments, mart_route_performance
-
----
 
 4. KPIs définis
 
@@ -108,8 +107,6 @@ Intégration dans dbt :
 - Agrégé par route dans int_route_metrics
 - Contribue au churn_score dans int_customer_metrics
 
----
-
 6. Dashboard Power BI
 
 Page 1 — Réseau & Rentabilité
@@ -133,7 +130,6 @@ Synthèse des 3 axes avec allocation budgétaire recommandée :
 - Routes : 35% (4 routes performantes à développer)
 - Upsell : 20% (attach rate 5.66% vs 15-20% benchmark)
 
----
 
 7. Interface IA agentique (MCP)
 
@@ -147,21 +143,20 @@ DuckDB (warehouse/air_civ.duckdb)
 Réponse chiffrée en français
 
 4 outils exposés
-routes | Quelles routes méritent plus de budget ? 
-clients_a_risque | Quels clients sont à risque de churn ? 
-upsell | Quel potentiel upsell par segment ? 
-resume | Où investir le budget en priorité ? 
+/routes : Quelles routes méritent plus de budget ? 
+/clients_a_risque : Quels clients sont à risque de churn ? 
+/upsell : Quel potentiel upsell par segment ? 
+/resume : Où investir le budget en priorité ? 
 
 Démonstration
 Claude appelle automatiquement les outils pertinents,
 récupère les données réelles DuckDB et formule des
 recommandations chiffrées et actionnables.
 
----
 
 8. Recommandation finale
 
-Question : Où investir le budget en priorité ?**
+Question : Où investir le budget en priorité ?
 
 Priorité 1 — Rétention clients (45%)
 207 clients représentant $3.12M de LTV sont à risque.
@@ -179,7 +174,6 @@ Attach rate de 5.66% vs benchmark industrie 15-20%.
 76 clients identifiés avec fort potentiel upsell.
 Action : Campagne ciblée = gain estimé $187K additionnel.
 
----
 
 9. Limitations
 
@@ -195,7 +189,6 @@ Action : Campagne ciblée = gain estimé $187K additionnel.
 - Pas de données temporelles longues — 6 mois de données
   ne permettent pas d'analyser la saisonnalité complète
 
----
 
 10. Next Steps
 
@@ -212,7 +205,6 @@ Avec plus de temps et de ressources :
 6. Data Vault — migrer vers Data Vault 2.0
    si intégration de sources multiples (Amadeus, Navitaire)
 
----
 
 11. Instructions de setup
 
